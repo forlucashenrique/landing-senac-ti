@@ -1,0 +1,60 @@
+@import './input.scss';
+@import './button.scss';
+
+.subscribe-container {
+    width: 100%;
+    height: 500px;
+    padding: 2em;
+}
+
+
+
+.subscribe-form-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    width: 100%;
+    
+    
+
+    h2 {
+        font-size: .8em;
+        font-weight: 700;
+        color: $azul;
+        margin-bottom: 40px;
+    }
+
+    p {
+        color: #aaa;
+        font-weight: 400;
+        font-size: 0.9em;
+        word-spacing: .4em;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            color: $azul;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+
+.subscribe-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+
+    button {
+        align-self: center;
+        @include button_style($azul, #fff, 120px, 50px)
+    }
+}
+

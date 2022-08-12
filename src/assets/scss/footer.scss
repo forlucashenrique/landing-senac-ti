@@ -1,0 +1,61 @@
+.rodape {
+    width: 100%;
+    height: 350px;
+    background-color: $azul-rodape;
+}
+
+.rodape-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    
+    img {
+        width: 120px;
+        height: 50px;
+    }
+}
+
+.rodape-contato {
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+
+    h3 {
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    div {
+        margin-bottom: 10px;
+    }
+}
+
+.rodape-contato-endereco {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    span {
+        color: #aaa;
+        margin-right: 5px;
+        font-weight: 100;
+    }
+
+}
+
+.rodape-contato-telefone, .rodape-contato-email {
+    @extend .rodape-contato-endereco;
+    a {
+        text-decoration:  none;
+        color: $azul;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+
+}

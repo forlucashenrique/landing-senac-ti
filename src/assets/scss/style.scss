@@ -1,0 +1,21 @@
+$azul: #009cff;
+$azul-rodape: #111111;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+@import './header.scss';
+@import './banner.scss';
+@import './formSubscribe.scss';
+@import './footer.scss';
+
+

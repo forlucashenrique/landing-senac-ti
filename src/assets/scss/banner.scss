@@ -1,0 +1,17 @@
+.banner-container {
+    width: 100%;
+    height: 500px;
+    position:relative;
+    overflow:hidden; /*Utilizar para não exibir o corte automático da imagem*/
+    /*Deve-se definir um min-height e min-width para que a imagem apareça corretamente no local desejado, e com o tamanho desejado, por exemplo:*/
+    //   width: 50%;
+    //   min-height: 200px;
+    img {
+        min-width:100%;
+        height:100%;
+        position:absolute;
+        left:50%;
+        transform:translate(-50%);
+    }
+    
+}

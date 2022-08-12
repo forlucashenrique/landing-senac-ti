@@ -1,0 +1,18 @@
+
+
+@mixin button_style($background, $color, $width, $height){
+    width: $width;
+    height: $height;
+    background-color: $background;
+    color: $color;
+}
+
+button {
+    border: none;
+    font-weight: bold;
+    border-radius: 100px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
