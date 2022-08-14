@@ -5,6 +5,19 @@
     width: 100%;
     height: 500px;
     padding: 2em;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+
+    @media screen {
+        @media (min-width: 600px){
+            .subscribe-form-container {
+                width: 600px;
+                
+            }
+        }
+    }
 }
 
 
@@ -16,7 +29,6 @@
     flex-direction: column;
     padding: 1em;
     width: 100%;
-    
     
 
     h2 {
@@ -56,5 +68,7 @@
         align-self: center;
         @include button_style($azul, #fff, 120px, 50px)
     }
+
+    
 }
 

@@ -1,4 +1,4 @@
-
+@import './button.scss';
 
 header {
     width: 100%;
@@ -11,10 +11,27 @@ header {
     align-items: center;
     width: 100%;
     height: 70%;
+    padding: 10px;
 
     img {
         width: 150px;
         height: 50px;
+    }
+
+    h2 {
+        color: $azul;
+        display: none;
+        transition: .5s;
+    }
+
+    @media screen {
+        @media(min-width: 800px){
+            justify-content: space-around;
+
+            h2 {
+                display: block;
+            }
+        }
     }
 }
 
@@ -25,7 +42,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 30px;
     
     h2 {
         font-size: 1em;
@@ -34,16 +51,56 @@ header {
         letter-spacing: 0.1em;
     }
 
+    .home {
+        display: none;
+    }
+
+
     .icon-container {
         width: 40px;
         height: 40px;
-        
+        border: 1px solid rgba(169, 169, 169, 0.61);
+        border-radius: 5px;
+        margin-right: 5px;
 
         .icon-menu {
             width: 100%;
             height: 100%;
             font-weight: 400;
             color: #aaa;
+        }
+    }
+    
+    button {
+        @include button_style(#fff, $azul-rodape, 120px, 40px);
+        display: none;
+    }
+
+
+
+    @media screen {
+        @media (min-width: 800px) {
+
+            .icon-container {
+                display: none;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .home {
+                display: block;
+                color: $azul-rodape;
+            }
+
+            button {
+                display: block;
+            }
+
+
+
+
         }
     }
 

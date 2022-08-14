@@ -10,12 +10,12 @@ export default function formSubscribe(){
                 <p>Ao prosseguir com sua inscrição você estará de acordo com o <a href='#home'>termo de privacidade</a>.</p>
             </div>
             <div className="subscribe-form-container">
-                <form action="">
-                    <Input text={'Nome Completo'}/>
-                    <Input text={'E-mail'}/>
-                    <Input text={'CPF'}/>
-                    <Input text={'Telefone'}/>
-                </form>
+                
+                <Input text={'Nome Completo'}/>
+                <Input text={'E-mail'}/>
+                <Input styleClass='wrap' text={'CPF'}/>
+                <Input styleClass='wrap' text={'Telefone'}/>
+              
                 <button>Salvar</button>
             </div>
         </section>
